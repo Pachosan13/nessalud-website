@@ -103,9 +103,12 @@
         .service-block-visual.gradient-3 { background: linear-gradient(135deg, #0F766E 0%, var(--teal) 100%); }
         .service-block-visual.gradient-4 { background: linear-gradient(135deg, #0E7490 0%, #06B6D4 100%); }
         .service-block-visual.gradient-5 { background: linear-gradient(135deg, #047857 0%, #34D399 100%); }
-        .service-block-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.12) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255,255,255,0.08) 0%, transparent 40%); }
+        .service-block-visual::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 30% 40%, rgba(255,255,255,0.12) 0%, transparent 50%), radial-gradient(circle at 70% 80%, rgba(255,255,255,0.08) 0%, transparent 40%); z-index: 1; }
         .service-block-icon { width: 100px; height: 100px; border: 3px solid rgba(255,255,255,0.25); border-radius: 50%; display: flex; align-items: center; justify-content: center; position: relative; z-index: 2; }
         .service-block-icon svg { width: 48px; height: 48px; color: white; }
+        .service-block-visual img {
+            width: 100%; height: 100%; object-fit: cover; position: absolute; inset: 0;
+        }
 
         .service-block-content h2 { margin-bottom: 16px; }
         .service-block-content > p { font-size: 1.05rem; color: var(--slate); margin-bottom: 32px; line-height: 1.8; }
@@ -200,9 +203,7 @@
     <div class="container">
         <div class="service-block-grid reveal">
             <div class="service-block-visual gradient-1">
-                <div class="service-block-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="7" width="18" height="14" rx="2"/><path d="M8 7V5a4 4 0 0 1 8 0v2"/><path d="M12 11v4M10 13h4"/></svg>
-                </div>
+                <img src="img/evalucioninicial.jpg" alt="Evaluación médica inicial en NESSALUD Panamá" loading="lazy">
             </div>
             <div class="service-block-content">
                 <span class="section-label">Medicina General</span>
@@ -280,9 +281,7 @@
     <div class="container">
         <div class="service-block-grid reveal">
             <div class="service-block-visual gradient-3">
-                <div class="service-block-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20a6 6 0 0 0-12 0"/><circle cx="12" cy="10" r="4"/><path d="M12 14v6"/></svg>
-                </div>
+                <img src="img/terapiadeportiva.jpg" alt="Rehabilitación deportiva de rodilla en NESSALUD Panamá" loading="lazy">
             </div>
             <div class="service-block-content">
                 <span class="section-label">Rehabilitación</span>
